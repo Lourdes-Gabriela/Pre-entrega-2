@@ -1,0 +1,131 @@
+.body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.containernav{
+    background-color: #f9f9f9;
+    display: grid;
+    justify-items: center;
+}
+
+.logo {
+    list-style-type: none; 
+    padding: 10px;
+    /*margin-top: 20px;
+    margin-left: 20px;*/
+    grid-row: 1/4;
+    grid-column: 1/2;  
+}
+
+.link1 {
+    list-style-type: none;
+    font-family: 'UnifrakturMaguntia', cursive;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.link2 {
+    list-style-type: none;
+    font-family: 'UnifrakturMaguntia', cursive;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.link3 {
+    list-style-type: none;
+    font-family: 'UnifrakturMaguntia', cursive;
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.link4 {
+    list-style-type: none;
+    font-family: 'UnifrakturMaguntia', cursive;
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.textoLink {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    background-color: #DEDEDE;
+    color: #4D4D4D;
+    padding: 2px;
+}
+/*CSS del .contenedor main*/
+/*
+.contenedor {
+    display: grid;
+}
+
+.fondoContador {
+    grid-row: 1/5;
+    grid-column: 2/7;
+}
+
+.cuadrado {
+    width: 47px; 
+    height: 47px; 
+    background: #DEDEDE;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.cuadrado2 {
+    width: 47px; 
+    height: 47px; 
+    background: #DEDEDE;
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.cuadrado3 {
+    width: 47px; 
+    height: 47px; 
+    background: #DEDEDE;
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.botonMenu {
+    grid-row: 4/5;
+    grid-column: 5/6;
+}
+*/
+
+/* CSS pagina info.html*/
+.contenedor-info {
+    display: grid;
+    grid-template-rows: 100px repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit)1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.img-perfil {
+    grid-area: 2 / 2 / 4 / -4;
+    
+}
+
+.relleno-texto-info{
+    position: relative;
+    grid-area: 2 / 4 / -2 / -2;
+    background-color: #DEDEDE;
+}
+.texto-info { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4D4D4D;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.botonMenu-info {
+    grid-area: 5 / 6 / -1 / -1;
+    justify-self: end;
+    margin-top: 140px;
+    margin-right: 30px;
+    
+}
